@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+     html,body
+        {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        *
+        {
+            box-sizing: border-box;
+        }
+        .container1
+        {
+            width: 100%;
+            height: 100vh;
+           overflow: hidden;
+           position: relative;
+         
+        }
+        .container
+        {
+            width: 110%;
+            height: 110%;
+            background-image: url('a.jpg');
+            background-size: cover;
+            filter: blur(15px);
+            position: absolute;
+            left: -5%;
+            top: -5%;
+          
+          
+        }
+        .card
+        {
+            width: 27%;
+            height: 70vh;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0px 0px 50px rgba(70, 250, 150, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+           
+        }
+        .image,.image1
+        {
+            width: 100%;
+            height: 70%;
+            transition: 1s;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image: url('b.jpg');
+            background-size: 100% 100%;
+            
+        }
+        .image1
+        {
+            background-image: url('a.jpg');
+            background-size: cover; 
+        }
+        .info
+        {
+            width: 100%;
+            height: 40%;
+            background-color:lightgray;
+            transition: 1s;
+            position: absolute;
+            bottom: -8%;
+            
+        }
+       
+        .card:hover>.image 
+        {
+           transform: scale(2,-1);
+           transition: 1s;
+        }
+        .card:hover >.info
+        {
+        
+            transition: 1s;
+            transform: skew(0deg,-12deg);
+        }
+        .part2:hover>.image1
+        {
+            transform: scale(2,2);
+            transition: 1s;
+        }
+        .part2:hover>.info
+        {
+            transition: 1s;
+            transform: skew(0deg,-12deg);
+        }
+        .part2
+        {
+            width: 27%;
+            height: 70vh;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            left:70%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            overflow: hidden;
+            
+           
+        }
+        .text
+        {
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: bolder;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+         <div class="container"> hello</div>     
+         
+    </div>
+
+    <div class="card">
+        <div class="image"></div>
+        <div class="info">
+            <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quo eaque vero porro consequatur aliquam officia voluptas. Nulla repellat neque et adipisci nostrum, velit nihil vitae optio dicta, ullam cum!
+            </div>
+        </div>
+    </div>
+    <div class="part2">
+            <div class="image1"></div>
+            <div class="info">
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quo eaque vero porro consequatur aliquam officia voluptas. Nulla repellat neque et adipisci nostrum, velit nihil vitae optio dicta, ullam cum!
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
